@@ -1,0 +1,53 @@
+.containerTotalInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 426px) {
+  .containerTotalInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+}
+
+.containerTotalInfo h3 {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333333;
+}
+
+.containerTotalInfo span {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #828282;
+}
+
+.containerTotalAction button {
+  width: 90%;
+  height: 45px;
+  margin: 10px 0;
+  background: #e0e0e0;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #828282;
+  cursor: pointer;
+  transition: 145ms;
+}
+
+.containerTotalAction button:hover {
+  background: #828282;
+  border: 2px solid #828282;
+  border-radius: 8px;
+  color: #e0e0e0;
+}
