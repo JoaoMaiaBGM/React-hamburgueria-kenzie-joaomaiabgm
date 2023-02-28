@@ -1,10 +1,20 @@
-# Getting Started with Create React App
+# Access the project
+
+You can access the project with: [Burguer Kenzie](https://react-hamburgueria-kenzie-joaomaiabgm.vercel.app/)
+
+---
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn`
+
+Install all the dependencies of this project.
 
 ### `yarn start`
 
