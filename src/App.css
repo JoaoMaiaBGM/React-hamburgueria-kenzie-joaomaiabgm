@@ -14,13 +14,6 @@
   margin-bottom: 8px;
 }
 
-.headerLogo {
-  height: 2.3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @media screen and (min-width: 426px) {
   .App-header {
     width: 100%;
@@ -32,13 +25,6 @@
     justify-content: space-around;
     color: white;
     margin-bottom: 8px;
-  }
-
-  .headerLogo {
-    height: 2.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -68,24 +54,6 @@
     color: white;
     margin-bottom: 8px;
   }
-
-  .headerLogo {
-    height: 2.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 50px;
-  }
-
-  .headerAction {
-    width: 300px;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding-right: 50px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -99,97 +67,6 @@
     justify-content: space-between;
     color: white;
     margin-bottom: 8px;
-  }
-}
-
-.headerAction {
-  width: 300px;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.headerInput {
-  width: 170px;
-  height: 40px;
-  background: #ffffff;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  font-family: sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #828282;
-  padding-left: 15px;
-}
-
-.headerBtn {
-  width: 80px;
-  height: 40px;
-  background: #27ae60;
-  border: 2px solid #27ae60;
-  border-radius: 8px;
-  color: #ffffff;
-  font-family: sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  cursor: pointer;
-  transition: 145ms;
-}
-
-.headerBtn:hover {
-  background: #93d7af;
-  border: 2px solid #93d7af;
-  border-radius: 8px;
-}
-
-@media screen and (min-width: 426px) {
-  .headerAction {
-    width: 200px;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .headerInput {
-    width: 170px;
-    height: 35px;
-    background: #ffffff;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    font-family: sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #828282;
-    padding-left: 15px;
-  }
-
-  .headerBtn {
-    width: 80px;
-    height: 35px;
-    background: #27ae60;
-    border: 2px solid #27ae60;
-    border-radius: 8px;
-    color: #ffffff;
-    font-family: sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .headerAction {
-    width: 300px;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
   }
 }
 

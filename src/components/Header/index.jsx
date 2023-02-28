@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logo from "../../assets/logo-kenzie-burguer.png";
+import "./styles.css";
 
 const Header = ({ setProduct, filteredProducts }) => {
   const [search, setSearch] = useState("");
