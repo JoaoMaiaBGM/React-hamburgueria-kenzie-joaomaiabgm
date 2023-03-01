@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import ProductList from "./components/ProductList";
 import Cart from "./components/Cart";
+import { Footer } from "./components/Footer";
 import { useEffect, useState } from "react";
 
 import "./App.css";
@@ -53,6 +54,7 @@ function App() {
           removeAll={removeAll}
         />
       </div>
+      <Footer />
     </div>
   );
 }
