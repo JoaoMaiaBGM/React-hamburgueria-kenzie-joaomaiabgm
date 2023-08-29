@@ -1,6 +1,6 @@
 .footerContainer {
-  min-width: 100vh;
-  height: 7vh;
+  width: 98%;
+  height: 55px;
 
   display: flex;
   flex-direction: row;
@@ -19,13 +19,6 @@
     height: fit-content;
 
     flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .footerContainer {
-    min-width: fit-content;
-    height: fit-content;
   }
 }
 
