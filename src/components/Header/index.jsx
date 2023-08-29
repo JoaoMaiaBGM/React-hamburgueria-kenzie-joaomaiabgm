@@ -21,7 +21,7 @@ const Header = ({ setProduct, filteredProducts }) => {
   }
 
   return (
-    <>
+    <div className="headerContainer">
       <div className="headerLogo">
         <img src={logo} alt="Logo Kenzie Burguer" />
       </div>
@@ -37,7 +37,7 @@ const Header = ({ setProduct, filteredProducts }) => {
           Pesquisar
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

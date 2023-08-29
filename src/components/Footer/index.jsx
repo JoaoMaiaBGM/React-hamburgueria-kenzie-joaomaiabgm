@@ -9,13 +9,18 @@ export const Footer = () => {
         <div className="footerItemsContainer">
           <a
             href="https://github.com/JoaoMaiaBGM/React-hamburgueria-kenzie-joaomaiabgm"
-            target={"_blank"}
+            target="_blank"
+            rel="noreferrer"
           >
             <BsGithub className="footerItemsImage" />
             Repositório do projeto
           </a>
 
-          <a href="https://portfolio-ecru-one-30.vercel.app/" target={"_blank"}>
+          <a
+            href="https://portfolio-ecru-one-30.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <CgProfile className="footerItemsImage" /> Portfólio
           </a>
         </div>
