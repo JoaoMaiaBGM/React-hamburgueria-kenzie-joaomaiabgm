@@ -1,6 +1,12 @@
+import { useContext } from "react";
+
+import { CartContext } from "../../providers/cartContext";
+
 import "./style.css";
 
-const CartProduct = ({ product, handleRemove, index }) => {
+const CartProduct = ({ product }) => {
+  const { removeFromCart } = useContext(CartContext);
+
   return (
     <div className="container-cartItem">
       <div className="cartImage">
@@ -11,7 +17,7 @@ const CartProduct = ({ product, handleRemove, index }) => {
         <p className="cartCategory">{product.category}</p>
       </div>
       <div className="containerBtn">
-        <button className="cartBtn" onClick={() => handleRemove(index)}>
+        <button className="cartBtn" onClick={() => removeFromCart(product.id)}>
           remover
         </button>
       </div>
