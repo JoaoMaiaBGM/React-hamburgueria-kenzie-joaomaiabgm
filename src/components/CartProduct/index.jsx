@@ -5,10 +5,22 @@ import { CartContext } from "../../providers/cartContext";
 import "./style.css";
 
 const CartProduct = ({ product }) => {
-  const { removeFromCart } = useContext(CartContext);
-  const [count, setCount] = useState(1);
-  const add = count + 1;
-  const reduce = count - 1;
+  const { removeFromCart, addToCart, reduceQuantity } = useContext(CartContext);
+  const [productQuantity, setProductQuantity] = useState(product.quantity);
+
+  const handleIncreaseQuantity = () => {
+    setProductQuantity(productQuantity + 1);
+    addToCart({ ...product, quantity: productQuantity + 1 });
+  };
+
+  const handleDecreaseQuantity = () => {
+    if (productQuantity < 1) {
+      removeFromCart(product.id);
+    } else {
+      setProductQuantity(productQuantity - 1);
+      reduceQuantity({ ...product, quantity: productQuantity - 1 });
+    }
+  };
 
   return (
     <div className="container-cartItem">
@@ -31,21 +43,15 @@ const CartProduct = ({ product }) => {
           <button
             className="countButton"
             type="button"
-            onClick={() => {
-              if (count === 1) {
-                removeFromCart(product.id);
-              } else {
-                setCount(reduce);
-              }
-            }}
+            onClick={() => handleDecreaseQuantity()}
           >
             -
           </button>
-          <span className="countItem">{count}</span>
+          <span className="countItem">{product.quantity}</span>
           <button
             className="countButton"
             type="button"
-            onClick={() => setCount(add)}
+            onClick={() => handleIncreaseQuantity()}
           >
             +
           </button>

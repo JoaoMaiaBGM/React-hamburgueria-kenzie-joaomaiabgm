@@ -5,18 +5,13 @@ import { CartContext } from "../../providers/cartContext";
 import "./style.css";
 
 const CartTotal = () => {
-  const { total, removeAllProducts } = useContext(CartContext);
+  const { calculateTotal, removeAllProducts } = useContext(CartContext);
 
   return (
     <>
       <div className="containerTotalInfo">
         <h3>Total</h3>
-        <span>
-          {total.toLocaleString("pt-BR", {
-            style: "currency",
-            currency: "BRL",
-          })}
-        </span>
+        <span>{calculateTotal()}</span>
       </div>
       <div className="containerTotalAction">
         <button type="button" onClick={() => removeAllProducts()}>
