@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  margin: 30px auto;
 }
 
 .cartTitle {
@@ -20,13 +22,15 @@
   color: #ffffff;
 }
 
-@media screen and (min-width: 426px) {
+@media screen and (max-width: 428px) {
   .checkout {
     width: 94%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
 }
 
@@ -36,7 +40,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10px;
   }
 
   .cartTitle {
@@ -75,7 +78,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
   }
 
   .containerEmptyCart {
@@ -91,7 +93,7 @@
   }
 
   .cartTitle {
-    width: 95%;
+    width: 340px;
     height: 65px;
     background: #27ae60;
     border-radius: 5px 5px 0px 0px;
@@ -133,7 +135,7 @@
 
 @media screen and (min-width: 426px) {
   .containerTotal {
-    width: 97%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background: #f5f5f5;

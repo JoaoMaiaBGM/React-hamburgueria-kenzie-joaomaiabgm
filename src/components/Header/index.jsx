@@ -10,8 +10,6 @@ const Header = () => {
   const { setProductList, filteredProducts } = useContext(ProductContext);
   const [search, setSearch] = useState("");
 
-  console.log(filteredProducts);
-
   function filterProduct(productToFilter) {
     const filtered = filteredProducts?.filter((element) => {
       return (

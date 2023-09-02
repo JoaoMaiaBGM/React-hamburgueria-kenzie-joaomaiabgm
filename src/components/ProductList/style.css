@@ -6,7 +6,8 @@
 
   gap: 10px;
   overflow-x: scroll;
-  margin: 30px 0 35px 0;
+  margin: 30px auto 35px auto;
+  padding-left: 0;
 }
 
 @media screen and (min-width: 1024px) {
