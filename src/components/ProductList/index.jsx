@@ -1,9 +1,21 @@
-import Product from "../Product";
+import { useContext } from "react";
 
-const ProductList = ({ product, handleClick }) => {
-  return product.map((item, productId) => (
-    <Product item={item} key={productId} handleClick={handleClick}></Product>
-  ));
+import { ProductContext } from "../../providers/productContext";
+
+import ProductCard from "../ProductCard";
+
+import "./style.css";
+
+const ProductList = () => {
+  const { productList } = useContext(ProductContext);
+
+  return (
+    <ul className="container-products">
+      {productList.map((product) => (
+        <ProductCard key={product.id} product={product}></ProductCard>
+      ))}
+    </ul>
+  );
 };
 
 export default ProductList;

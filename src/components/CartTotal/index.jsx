@@ -1,23 +1,20 @@
+import { useContext } from "react";
+
+import { CartContext } from "../../providers/cartContext";
+
 import "./style.css";
 
-const CartTotal = ({ currentSale, removeAll }) => {
-  const total = currentSale.map((product) => product.price);
+const CartTotal = () => {
+  const { calculateTotal, removeAllProducts } = useContext(CartContext);
 
   return (
     <>
       <div className="containerTotalInfo">
         <h3>Total</h3>
-        <span>
-          {total
-            .reduce((acc, cur) => cur + acc, 0)
-            .toLocaleString("pt-BR", {
-              style: "currency",
-              currency: "BRL",
-            })}
-        </span>
+        <span>{calculateTotal()}</span>
       </div>
       <div className="containerTotalAction">
-        <button type="button" onClick={() => removeAll()}>
+        <button type="button" onClick={() => removeAllProducts()}>
           Remover todos
         </button>
       </div>

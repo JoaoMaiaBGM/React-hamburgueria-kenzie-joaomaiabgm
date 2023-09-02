@@ -1,9 +1,16 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+
+import { ProductContext } from "../../providers/productContext";
+
 import logo from "../../assets/logo-kenzie-burguer.png";
+
 import "./styles.css";
 
-const Header = ({ setProduct, filteredProducts }) => {
+const Header = () => {
+  const { setProductList, filteredProducts } = useContext(ProductContext);
   const [search, setSearch] = useState("");
+
+  console.log(filteredProducts);
 
   function filterProduct(productToFilter) {
     const filtered = filteredProducts?.filter((element) => {
@@ -12,7 +19,7 @@ const Header = ({ setProduct, filteredProducts }) => {
         element.category.toLowerCase().includes(productToFilter.toLowerCase())
       );
     });
-    return setProduct(filtered);
+    return setProductList(filtered);
   }
 
   function handleFilter() {

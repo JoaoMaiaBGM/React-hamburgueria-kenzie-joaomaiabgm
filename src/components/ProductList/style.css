@@ -1,0 +1,28 @@
+.container-products {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 10px;
+  overflow-x: scroll;
+  margin: 30px 0 35px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .container-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    gap: 20px;
+    overflow: hidden;
+  }
+}
