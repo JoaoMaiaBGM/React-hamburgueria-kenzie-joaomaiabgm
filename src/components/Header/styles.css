@@ -15,7 +15,7 @@ img {
   height: 35px;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 767px) {
   .headerContainer {
     height: 100px;
 
