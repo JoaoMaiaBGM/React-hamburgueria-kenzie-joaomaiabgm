@@ -6,12 +6,14 @@ export const ProductContext = createContext({});
 
 export const ProductProvider = ({ children }) => {
   const [productList, setProductList] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
     const getProducts = async () => {
       try {
         const { data } = await Api.get("/products");
         setProductList(data);
+        setFilteredProducts(data);
       } catch (error) {
         console.log(error);
       }
@@ -20,7 +22,9 @@ export const ProductProvider = ({ children }) => {
   }, []);
 
   return (
-    <ProductContext.Provider value={{ productList }}>
+    <ProductContext.Provider
+      value={{ productList, setProductList, filteredProducts }}
+    >
       {children}
     </ProductContext.Provider>
   );

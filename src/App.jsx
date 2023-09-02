@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { ProductProvider } from "./providers/productContext";
 import { CartProvider } from "./providers/cartContext";
 
@@ -11,19 +9,12 @@ import { Footer } from "./components/Footer";
 import "./App.css";
 
 function App() {
-  const [product, setProduct] = useState([]);
-  const [filteredProducts, setFilteredProducts] = useState([]);
-
   return (
     <CartProvider>
       <ProductProvider>
         <div className="App">
           <div className="App-header">
-            <Header
-              product={product}
-              setProduct={setProduct}
-              filteredProducts={filteredProducts}
-            />
+            <Header />
           </div>
           <div className="container">
             <ProductList />
