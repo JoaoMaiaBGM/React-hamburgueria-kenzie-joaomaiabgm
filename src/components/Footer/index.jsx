@@ -2,7 +2,7 @@ import "./styles.css";
 import { BsGithub } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <>
       <div className="footerContainer">
@@ -29,3 +29,5 @@ export const Footer = () => {
     </>
   );
 };
+
+export default Footer;

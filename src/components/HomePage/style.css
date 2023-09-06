@@ -1,5 +1,5 @@
-.App {
-  height: 100vh;
+.body {
+  height: max-content;
   text-align: center;
 }
 
