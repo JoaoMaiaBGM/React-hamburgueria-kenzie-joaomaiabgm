@@ -26,7 +26,7 @@ const Header = () => {
   }
 
   return (
-    <div className="headerContainer">
+    <header className="headerContainer">
       <div className="headerLogo">
         <img src={logo} alt="Logo Kenzie Burguer" />
       </div>
@@ -42,7 +42,7 @@ const Header = () => {
           Pesquisar
         </button>
       </div>
-    </div>
+    </header>
   );
 };
 
