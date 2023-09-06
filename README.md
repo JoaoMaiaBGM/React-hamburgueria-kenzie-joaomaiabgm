@@ -10,6 +10,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+Download de project and,
+
 In the project directory, you can run:
 
 ### `yarn`
