@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 
-import NavItems from "../../utils/navItems";
+import NavItems from "../../utils/sidebar/navItems";
 
 import "./style.css";
 
@@ -26,10 +27,10 @@ const Sidebar = () => {
         </header>
         <nav className="sidebar-menu">
           {NavItems.map((item) => (
-            <button className="sidebar-button" key={item.id}>
-              <span>{item.image}</span>
-              <p>{item.name}</p>
-            </button>
+            <Link to={`/${item.name}`} key={item.id} className="sidebar-button">
+              <span className="button-image">{item.image}</span>
+              <p className="button-name">{item.name}</p>
+            </Link>
           ))}
         </nav>
       </div>
