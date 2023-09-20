@@ -1,6 +1,6 @@
 .sidebar {
   width: 70px;
-  height: 450px;
+  height: 228px;
 
   margin-top: 30px;
 
@@ -10,6 +10,8 @@
 
   background: rgb(0 0 0 / 15%);
   transition: width 0.4s;
+
+  border-radius: 5px;
 }
 
 .sidebar.open {
@@ -17,14 +19,16 @@
 }
 
 .sidebar-container {
+  width: 100%;
+
   position: relative;
-  width: 200px;
+  display: grid;
 }
 
 .sidebar-header {
   display: flex;
   align-items: center;
-  height: 72px;
+  height: 60px;
   background: rgb(0 0 0 / 15%);
 }
 
@@ -46,7 +50,6 @@
 
 .sidebar-menu {
   display: grid;
-  padding: 5px;
 }
 
 .sidebar-button {
@@ -56,10 +59,10 @@
   display: flex;
   align-items: center;
 
-  gap: 16px;
+  gap: 22px;
   line-height: 1;
+  padding: 0 15px;
 
-  padding: 0 10px;
   border: none;
 
   font-family: sans-serif;
