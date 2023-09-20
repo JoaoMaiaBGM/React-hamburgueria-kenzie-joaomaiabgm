@@ -76,8 +76,8 @@
   cursor: pointer;
 }
 
-.sidebar-button > span,
-p {
+.sidebar-button > .button-image,
+.button-name {
   color: #000;
 }
 
@@ -86,10 +86,10 @@ p {
   opacity: 1;
 }
 
-.sidebar-button:hover > span {
+.sidebar-button:hover > .button-image {
   opacity: 1;
 }
 
-.sidebar.open:is(.sidebar-button p) {
+.sidebar.open:is(.button-name) {
   opacity: 1;
 }
