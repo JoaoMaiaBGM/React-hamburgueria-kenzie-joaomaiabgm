@@ -1,5 +1,6 @@
-import Sidebar from "../Sidebar";
 import Header from "../Header";
+import Sidebar from "../Sidebar";
+import Navigation from "../Navegation";
 import Footer from "../Footer";
 
 import "./style.css";
@@ -8,8 +9,9 @@ const About = () => {
   return (
     <>
       <Header />
-      <div className="main">
+      <div className="main-about">
         <Sidebar />
+        <Navigation />
 
         <div className="content-container">
           <h1 className="title">Sobre a Burguer Kenzie</h1>
