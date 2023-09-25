@@ -3,6 +3,7 @@ import Input from "../Input";
 import ProductList from "../ProductList";
 import Cart from "../Cart";
 import Footer from "../Footer";
+import Navigation from "../Navegation";
 import Sidebar from "../Sidebar";
 
 import "./style.css";
@@ -15,6 +16,7 @@ const HomePage = () => {
       </Header>
       <main className="container">
         <Sidebar />
+        <Navigation />
         <ProductList />
         <Cart />
       </main>
