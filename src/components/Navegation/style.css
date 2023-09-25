@@ -29,6 +29,11 @@
   gap: 5px;
 }
 
+.crumb-image {
+  width: 15px;
+  height: 15px;
+}
+
 .crumb-name {
   margin: 0;
 
