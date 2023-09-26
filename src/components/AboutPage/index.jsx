@@ -1,6 +1,6 @@
 import Header from "../Header";
 import Sidebar from "../Sidebar";
-import Navigation from "../Navegation";
+import Navigation from "../Navigation";
 import Footer from "../Footer";
 
 import "./style.css";

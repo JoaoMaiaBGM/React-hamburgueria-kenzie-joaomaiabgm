@@ -1,5 +1,12 @@
-.main {
+.main-contact {
   height: 100vh;
+
+  display: flex;
+
+  background-color: #fff;
+
+  font-family: sans-serif;
+  font-style: normal;
 }
 
 .contact-container {
@@ -27,11 +34,12 @@
 .title {
   text-align: center;
 
+  font-size: 43px;
   font-weight: 700;
 }
 
 .contact-info-list {
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-direction: row;
 
@@ -41,6 +49,7 @@
   list-style: none;
 
   gap: 46px;
+  padding-left: 0;
 
   list-style: none;
 }
@@ -108,4 +117,60 @@
   transform: scaleX(1);
   transform-origin: center;
   background-color: #27ae60;
+}
+
+@media screen and (max-width: 1023px) {
+  .main-contact {
+    width: 90%;
+    height: 100%;
+
+    flex-direction: column;
+
+    margin: 0 auto;
+  }
+
+  .contact-container {
+    width: 100%;
+
+    margin-top: 20px;
+  }
+
+  .title-container {
+    width: 100%;
+    height: 130px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .contact-info-list {
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 60px;
+  }
+
+  .contact-item {
+    width: 210px;
+    height: 160px;
+
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contact-info-list {
+    flex-direction: row;
+
+    gap: 60px;
+  }
+
+  .contact-item {
+    width: 181px;
+    height: 160px;
+
+    padding: 0 15px;
+  }
 }

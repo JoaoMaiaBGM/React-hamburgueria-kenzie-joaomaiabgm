@@ -1,5 +1,6 @@
 import Header from "../Header";
 import Sidebar from "../Sidebar";
+import Navigation from "../Navigation";
 import Footer from "../Footer";
 
 import { MdMail } from "react-icons/md";
@@ -12,8 +13,9 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <div className="main">
+      <div className="main-contact">
         <Sidebar />
+        <Navigation />
         <div className="contact-container">
           <div className="title-container">
             <h1 className="title">Como você prefere falar com a gente?</h1>

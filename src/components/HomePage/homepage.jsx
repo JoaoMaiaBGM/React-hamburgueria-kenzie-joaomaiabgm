@@ -3,7 +3,7 @@ import Input from "../Input";
 import ProductList from "../ProductList";
 import Cart from "../Cart";
 import Footer from "../Footer";
-import Navigation from "../Navegation";
+import Navigation from "../Navigation";
 import Sidebar from "../Sidebar";
 
 import "./style.css";
