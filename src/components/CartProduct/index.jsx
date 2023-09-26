@@ -2,11 +2,14 @@ import { useContext, useState } from "react";
 
 import { CartContext } from "../../providers/cartContext";
 
+import ModalCart from "../ModalCart";
+
 import "./style.css";
 
 const CartProduct = ({ product }) => {
   const { removeFromCart, addToCart, reduceQuantity } = useContext(CartContext);
   const [productQuantity, setProductQuantity] = useState(product.quantity);
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   const handleIncreaseQuantity = () => {
     setProductQuantity(productQuantity + 1);
@@ -14,8 +17,8 @@ const CartProduct = ({ product }) => {
   };
 
   const handleDecreaseQuantity = () => {
-    if (productQuantity < 1) {
-      removeFromCart(product.id);
+    if (productQuantity < 2) {
+      setIsModalVisible(true);
     } else {
       setProductQuantity(productQuantity - 1);
       reduceQuantity({ ...product, quantity: productQuantity - 1 });
@@ -57,6 +60,16 @@ const CartProduct = ({ product }) => {
           </button>
         </div>
       </div>
+      {isModalVisible && (
+        <ModalCart
+          onChoose={(removeProduct) => {
+            if (removeProduct) {
+              removeFromCart(product.id);
+            }
+            setIsModalVisible(false);
+          }}
+        />
+      )}
     </div>
   );
 };
