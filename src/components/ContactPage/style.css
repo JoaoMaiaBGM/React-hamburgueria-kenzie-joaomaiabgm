@@ -1,0 +1,176 @@
+.main-contact {
+  height: 100vh;
+
+  display: flex;
+
+  background-color: #fff;
+
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+.contact-container {
+  width: 140%;
+
+  margin-bottom: 50px;
+}
+
+.title-container {
+  width: 85%;
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto 0 auto;
+
+  background: #27ae60;
+
+  color: #fff;
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+.title {
+  text-align: center;
+
+  font-size: 43px;
+  font-weight: 700;
+}
+
+.contact-info-list {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+
+  margin: 60px auto 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+
+  gap: 46px;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.contact-item {
+  width: 250px;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 0 15px;
+}
+
+.contact-item-icon {
+  font-size: 30px;
+  color: #27ae60;
+}
+
+.contact-item-title {
+  margin: 0;
+
+  color: #27ae60;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.contact-item-info {
+  font-size: 14px;
+
+  color: grey;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 800;
+
+  color: #000;
+  padding: 0;
+}
+
+.whatsapp::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+
+  transform: scaleX(0);
+  transform-origin: center;
+
+  display: grid;
+
+  transition: transform 0.3s;
+}
+
+.whatsapp:hover {
+  transition: 0.1s;
+  color: #27ae60;
+}
+
+.whatsapp:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+  background-color: #27ae60;
+}
+
+@media screen and (max-width: 1023px) {
+  .main-contact {
+    width: 90%;
+    height: 100%;
+
+    flex-direction: column;
+
+    margin: 0 auto;
+  }
+
+  .contact-container {
+    width: 100%;
+
+    margin-top: 20px;
+  }
+
+  .title-container {
+    width: 100%;
+    height: 130px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .contact-info-list {
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 60px;
+  }
+
+  .contact-item {
+    width: 210px;
+    height: 160px;
+
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contact-info-list {
+    flex-direction: row;
+
+    gap: 60px;
+  }
+
+  .contact-item {
+    width: 181px;
+    height: 160px;
+
+    padding: 0 15px;
+  }
+}
