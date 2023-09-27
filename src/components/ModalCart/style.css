@@ -16,6 +16,8 @@
 }
 
 .modal-content {
+  width: 250px;
+
   background: #fff;
 
   border-radius: 10px;
